@@ -1,0 +1,24 @@
+.tile {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--star-tile-size);
+  height: var(--star-tile-size);
+  border-radius: 6px;
+  background-color: var(--color-star-empty);
+  overflow: hidden;
+}
+
+.fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background-color: var(--color-yellow);
+}
+
+.icon {
+  position: relative; /* sits on top of the yellow fill */
+  width: 62%;
+  height: 62%;
+  color: var(--color-white);
+}

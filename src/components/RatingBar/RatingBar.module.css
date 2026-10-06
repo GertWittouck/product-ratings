@@ -1,0 +1,40 @@
+.row {
+  display: grid;
+  grid-template-columns: auto auto 1fr 3.5ch;
+  align-items: center;
+  column-gap: 6px;
+}
+
+.stars {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text);
+  text-align: right;
+  min-width: 1ch;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 16px;
+  color: var(--color-star-empty);
+}
+
+.track {
+  height: 10px;
+  background-color: var(--color-track);
+  overflow: hidden;
+}
+
+.bar {
+  display: block;
+  height: 100%;
+  min-width: 3px; /* keeps tiny counts visible, as in the design */
+  background-color: var(--color-yellow);
+}
+
+.count {
+  margin-left: 12px;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
