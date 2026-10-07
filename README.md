@@ -1,4 +1,4 @@
-# Feefo Product Rating
+# Product Rating card
 
 This is a React + TypeScript version of the "Product Rating" card: the overall score, a row of stars and a breakdown of reviews per star level.
 
