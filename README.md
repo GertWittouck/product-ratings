@@ -1,6 +1,6 @@
 # Feefo Product Rating
 
-My solution to Part 2 (UI Assessment) of the Feefo full-stack technical assessment. It is a React + TypeScript version of the Feefo "Product Rating" card: the overall score, a row of stars and a breakdown of reviews per star level.
+This is a React + TypeScript version of the "Product Rating" card: the overall score, a row of stars and a breakdown of reviews per star level.
 
 The rating data comes from a small mock backend ([json-server](https://github.com/typicode/json-server)), so the app loads its data the way it would from a real API.
 
@@ -73,7 +73,7 @@ Each component has its own folder with the component, its CSS Module and its tes
 ## Approach and decisions
 
 ### Keeping it simple
-I kept the code deliberately plain:
+The code exists out of:
 - function components with typed props
 - one small custom hook for data loading
 - logic in plain functions that are easy to unit test
@@ -131,12 +131,3 @@ The design is a static display widget, so I didn't invent interactions that aren
 | `json-server`                              | Mock REST API, so the app fetches its data like it would in production |
 
 All of them are development dependencies. The production bundle only contains React.
-
-## What I would do next
-
-- Add a skeleton placeholder instead of the loading text, and a "try again" button on error.
-- Support a "No reviews yet" state when the total is 0.
-- Add Storybook to show the components on their own with different data.
-- Add visual regression tests (for example Playwright screenshots) to catch styling changes.
-- Add translations for the labels ("Excellent", "out of" and so on).
-- Replace the hand-made SVG wordmark with the official Feefo logo asset.
